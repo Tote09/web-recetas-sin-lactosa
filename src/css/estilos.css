@@ -1,0 +1,763 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Alegreya Sans", "Helvetica Neue", Arial, sans-serif;
+  background-color: #f8f8f3;
+}
+
+h1 {
+  font-size: 2.8em;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 1.8em;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+ul {
+  list-style: none;
+}
+
+/* FOOTER*/
+
+footer {
+  background-color: rgb(206, 206, 206);
+  color: rgb(0, 0, 0);
+  text-align: center;
+  padding: 30px 0px 50px 0px;
+  margin-top: 100px;
+}
+
+footer a {
+  color: rgb(0, 0, 0);
+  text-decoration: none;
+  font-size: 0.8em;
+}
+
+footer a:hover {
+  color: #004aad;
+}
+
+.icono-redes:hover {
+  opacity: 0.6;
+}
+
+ul.colocar-iconos-redes {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+/*Enlace para saltar al contenido de la página*/
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #005fcc;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #ffbf47;
+}
+
+/* Header*/
+
+header {
+  background-color: rgb(255, 255, 255);
+}
+
+header nav {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  padding: 10px 0px 35px 0px;
+}
+
+header .logo {
+  padding: 20px 0px 10px 0px;
+}
+
+header a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+  padding-top: 5px;
+}
+
+header a:hover {
+  color: #004aad;
+}
+
+/* Contenedores*/
+
+.container_centrado {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/*Hero*/
+
+/*Fotografía*/
+
+.portada {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/portada-tortitas.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.foto_portada {
+  width: 100%;
+  object-fit: cover;
+  overflow: hidden;
+}
+
+/*Texto sobre imagen portada*/
+
+.eslogan {
+  position: absolute;
+  color: rgb(255, 255, 255);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  filter: drop-shadow(30px 30px 100px black);
+}
+
+.eslogan2 {
+  font-size: 2em;
+  filter: drop-shadow(30px 30px 100px black);
+}
+
+/*Apartado Recetas sin lactosa para tu dia a dia*/
+
+.seccion_sinlactosa {
+  margin: 20px;
+}
+
+.espacio_h2 {
+  margin: 60px 0px 50px 0px;
+}
+
+.margin-texto {
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+/*Recetas populares*/
+
+.seccion_recetas {
+  margin-left: 20px;
+}
+.tarjeta-articulo {
+  position: relative;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(255, 255, 255);
+}
+
+div .imagen-receta {
+  width: 100%;
+}
+
+.posicion-imagen {
+  position: relative;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  justify-content: center;
+}
+
+.titulo-tarjeta-receta {
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.titulo-tarjeta-receta a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  font-weight: 700;
+}
+
+.titulo-tarjeta-receta a:hover {
+  color: #004aad;
+}
+
+a:focus,
+button:focus {
+  outline: 2px solid #004aad;
+}
+
+/*Enlace para saltar al contenido de la página*/
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #004aad;
+  color: white;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+  border-radius: 0 0 4px 4px;
+  transition: top 0.3s;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid red;
+}
+/*PÁGINA CATEGORÍA*/
+
+/*Hero*/
+
+/*Fotografía*/
+
+.portada-categoria {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/portada-categoria.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/*PÁGINA TARTAS*/
+
+/*Hero*/
+
+/*Fotografía*/
+
+.portada-recetas {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/tartas-categoria.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.portada-tarta-oreo {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/tartas-categoria.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/*PÁGINA POSTRES*/
+
+.portada-postres {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/postres-categoria.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.portada-flan {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/flan-receta.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/*PÁGINA POSTRES*/
+
+.portada-bolleria-galletas {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/cookie-categoria.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.portada-muffins-chocolate {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/muffins.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 500px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+/*PÁGINA ENLACES*/
+
+.portada-enlaces {
+  background:
+    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
+    url("../img/enlaces-portada.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.enlaces {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.enlaces a {
+  color: #004aad;
+  font-size: 1.5em;
+  text-decoration: none;
+}
+
+.enlaces a:hover {
+  color: black;
+}
+
+.seccion-enlaces {
+  margin-top: 40px;
+  display: flex;
+  position: relative;
+  align-items: center;
+
+  text-align: center;
+  flex-direction: column;
+}
+
+.titulo-enlaces {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+/*RECETAS*/
+/*Cuerpo del post*/
+
+.contenedor-post {
+  margin-top: 50px;
+}
+.intro {
+  margin: 35px 20px;
+  font-size: 1.5em;
+}
+
+.h2-post {
+  margin: 20px 20px 20px 20px;
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+.texto-post {
+  margin: 20px 20px 35px 20px;
+  font-size: 1.2em;
+}
+
+/*Vídeo*/
+
+iframe {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16/9;
+  border: 0px;
+}
+
+.video {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+/*Lista pasos receta*/
+
+.lista-post {
+  margin: 0px 20px 40px 40px;
+}
+
+.lista-post li {
+  margin: 20px 0px;
+  font-size: 1.2em;
+  list-style: none;
+}
+
+.lista-post-pasos {
+  margin: 0px 20px 40px 40px;
+}
+
+.lista-post-pasos li {
+  margin: 20px 0px;
+  font-size: 1.2em;
+}
+
+/*Votación receta*/
+
+.container_voto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 30px;
+  border-color: #004aad;
+}
+
+button {
+  border: none;
+  background-color: rgb(248, 248, 243);
+  cursor: pointer;
+}
+
+button img {
+  margin-top: 10px;
+  width: 30px;
+}
+
+/* MEDIA - Cambio de diseño entre pantallas*/
+
+/*Pantalla desktop*/
+
+@media (min-width: 900px) {
+  /*Header PC*/
+  header .container_centrado {
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right: 30px;
+  }
+
+  header nav {
+    display: inline;
+    flex-direction: row;
+    padding: 0px 50px;
+  }
+
+  header a {
+    margin-right: 30px;
+  }
+
+  nav ul {
+    flex-direction: row;
+    display: flex;
+  }
+
+  header .logo {
+    padding-left: 40px;
+  }
+
+  header img {
+    width: 80px;
+  }
+
+  section .seccion_sinlactosa {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .margen-pc {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .eslogan2 {
+    font-size: 2.5em;
+  }
+
+  p {
+    font-size: 1.5em;
+  }
+
+  h1 {
+    font-size: 3.2em;
+  }
+
+  h3 {
+    font-size: 1.9em;
+  }
+
+  h2 {
+    font-size: 2.5em;
+  }
+
+  .texto_caja {
+    font-size: 1.2em;
+  }
+
+  div .espacio_2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* Sección Postres populares PC*/
+
+  .seccion_recetas {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 80px;
+  }
+
+  .carta {
+    width: 320px;
+    position: relative;
+    height: 350px;
+  }
+
+  h2 a {
+    font-size: 0.8em;
+  }
+
+  /*Footer PC*/
+
+  footer .container_centrado {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: end;
+  }
+
+  footer {
+    padding: 0px 0px 30px;
+  }
+
+  footer div a {
+    flex-direction: row;
+  }
+
+  .columna-logo {
+    padding-left: 40px;
+    text-align: start;
+    align-items: center;
+  }
+
+  .columna-logo p {
+    margin-top: 0px;
+  }
+
+  .columna-redes {
+    padding-right: 40px;
+  }
+
+  footer p {
+    font-size: 0.8em;
+  }
+
+  ul.colocar-iconos-redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  footer a[href="#Cookies"] {
+    padding: 0px 10px;
+    font-size: 0.8em;
+  }
+  footer a[href="#Aviso_legal"] {
+    padding: 0px 0px;
+    font-size: 0.8em;
+  }
+
+  footer a[href="#Privacidad"] {
+    padding: 0px 0px;
+    font-size: 0.8em;
+  }
+
+  footer a[href="#Cookies"]::after {
+    content: "\007C";
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  footer a[href="#Privacidad"]::after {
+    content: "\007C";
+    padding-left: 10px;
+    color: rgb(255, 255, 255);
+  }
+
+  footer img {
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }
+
+  .enlaces-footer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .seccion-articulos {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  /*PAGINA POST*/
+
+  section .seccion-ingredientes {
+    display: flex;
+    flex-direction: row;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 80px;
+  }
+
+  .seccion-pc {
+    display: flex;
+    flex-direction: row;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 100px;
+    justify-content: center;
+  }
+
+  div .foto-receta {
+    padding-top: 25px;
+  }
+
+  div .lista-ingredientes {
+    width: 50%;
+  }
+  .contenedor-post {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  iframe {
+    height: auto;
+  }
+
+  .video {
+    max-width: 1140px;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*Pantalla tablet*/
+
+@media (min-width: 768px) and (max-width: 899px) {
+  /*Pagina Home*/
+
+  .seccion_sinlactosa {
+    margin: 0px 30px 0px 30px;
+  }
+
+  div .espacio_2 {
+    display: flex;
+    flex-direction: row;
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .carta {
+    width: 230px;
+    position: relative;
+  }
+
+  .seccion-articulos {
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .skip-link {
+    padding: 6px 12px;
+    font-size: 14px;
+  }
+}
