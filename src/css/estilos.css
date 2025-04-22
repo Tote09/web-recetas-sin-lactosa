@@ -127,19 +127,13 @@ header a:hover {
 /*Hero*/
 
 /*Fotografía*/
+img{
+  width: 100%;
+}
 
 .portada {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/portada-tortitas.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 600px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
@@ -150,14 +144,18 @@ header a:hover {
   overflow: hidden;
 }
 
+.filtro-oscuro {
+  filter: brightness(0.5);
+}
+
 /*Texto sobre imagen portada*/
 
 .eslogan {
   position: absolute;
   color: rgb(255, 255, 255);
-  justify-content: center;
-  align-items: center;
-  text-align: center;
+  top:50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
   filter: drop-shadow(30px 30px 100px black);
 }
 
@@ -178,7 +176,7 @@ header a:hover {
 
 .margin-texto {
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 
 /*Recetas populares*/
@@ -196,6 +194,7 @@ header a:hover {
 
 div .imagen-receta {
   width: 100%;
+  
 }
 
 .posicion-imagen {
@@ -228,6 +227,38 @@ button:focus {
   outline: 2px solid #004aad;
 }
 
+/*Cambio opacidad foto receta en hover*/
+.color-imagen:hover{
+opacity: 0.6;
+filter: saturate(1.8);
+}
+
+/*Ilustracion mensajes SVG*/
+.ilustracion{
+  margin-left: 30px;
+  margin-bottom: 60px;
+}
+
+#tic{
+animation: tic 2s ease infinite;
+transform-origin: center;
+}
+
+@keyframes tic{
+  from{
+transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Imagen productos con lactosa*/
+
+.productos-lactosa{
+  clip-path: polygon(0.4% 0.3%, 100% 0%, 95% 85.8%, 20.1% 74%, 10.4% 100%, 14.1% 78.8%, 4.8% 77%)
+}
+
 /*Enlace para saltar al contenido de la página*/
 
 .skip-link {
@@ -254,17 +285,8 @@ button:focus {
 /*Fotografía*/
 
 .portada-categoria {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/portada-categoria.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
@@ -276,33 +298,15 @@ button:focus {
 /*Fotografía*/
 
 .portada-recetas {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/tartas-categoria.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
 
 .portada-tarta-oreo {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/tartas-categoria.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
@@ -310,33 +314,15 @@ button:focus {
 /*PÁGINA POSTRES*/
 
 .portada-postres {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/postres-categoria.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
 
 .portada-flan {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/flan-receta.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
@@ -344,33 +330,15 @@ button:focus {
 /*PÁGINA POSTRES*/
 
 .portada-bolleria-galletas {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/cookie-categoria.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
 
 .portada-muffins-chocolate {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/muffins.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 500px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
@@ -378,17 +346,8 @@ button:focus {
 /*PÁGINA ENLACES*/
 
 .portada-enlaces {
-  background:
-    linear-gradient(rgba(5, 7, 12, 0.5), rgba(5, 7, 12, 0.5)),
-    url("../img/enlaces-portada.jpg");
-  background-position: center;
-  background-size: cover;
-  height: 400px;
-  width: 100%;
   display: flex;
   position: relative;
-  align-items: center;
-  justify-content: center;
   text-align: center;
   flex-direction: column;
 }
@@ -413,7 +372,6 @@ button:focus {
   display: flex;
   position: relative;
   align-items: center;
-
   text-align: center;
   flex-direction: column;
 }
@@ -682,12 +640,14 @@ button img {
   /*PAGINA POST*/
 
   section .seccion-ingredientes {
-    display: flex;
     flex-direction: row;
     max-width: 1140px;
     margin-left: auto;
     margin-right: auto;
-    gap: 80px;
+    display: grid;
+    justify-content:space-around;
+    grid-template-columns: 1fr 1fr;
+    margin-right: 20px;
   }
 
   .seccion-pc {
@@ -705,7 +665,7 @@ button img {
   }
 
   div .lista-ingredientes {
-    width: 50%;
+    width: 70%;
   }
   .contenedor-post {
     max-width: 1140px;

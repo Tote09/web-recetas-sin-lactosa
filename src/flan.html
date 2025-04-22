@@ -53,6 +53,11 @@
 
     <main id="main">
       <section class="portada-flan">
+        <picture class="filtro-oscuro">
+          <source media="(min-width: 900px)" srcset="/src/img/flan-portada-pc.jpg?as=avif">
+          <source media="(min-width: 768px)" srcset="/src/img/flan-portada-tablet.jpg?as=avif">
+          <img src="/src/img/flan-portada-movil.jpg?as=avif" alt="Proción de flan en un plato con caramelo líquido">
+        </picture>
         <div class="eslogan">
           <h1>Flan sin lactosa</h1>
         </div>
@@ -95,7 +100,7 @@
             </div>
           </div>
 
-          <figure class="posicion-imagen">
+          <figure>
             <div class="foto-receta">
               <img
                 class="imagen-receta"

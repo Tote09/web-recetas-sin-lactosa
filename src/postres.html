@@ -53,6 +53,11 @@
 
     <main id="main">
       <section class="portada-postres">
+        <picture class="filtro-oscuro">
+          <source media="(min-width: 900px)" srcset="/src/img/postres-portada-pc.jpg?as=avif">
+          <source media="(min-width: 768px)" srcset="/src/img/postres-portada-tablet.jpg?as=avif">
+          <img src="/src/img/postres-portada-movil.jpg?as=avif" alt="Espolvorenado cacao sobre un tiramisú">
+        </picture>
         <div class="eslogan">
           <h1>Postres sin lactosa</h1>
         </div>
@@ -69,7 +74,8 @@
               <div>
                 <figure class="posicion-imagen">
                   <div>
-                    <a 
+                    <a
+                    class="color-imagen" 
                     href="flan.html" 
                     title="Ver receta de Flan sin lactosa"
                     >
@@ -101,6 +107,7 @@
                 <figure class="posicion-imagen">
                   <div>
                     <a
+                    class="color-imagen"
                     href="#brownie" 
                     title="Ver receta de Brownie sin lactosa"
                     >

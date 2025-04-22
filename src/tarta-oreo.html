@@ -53,6 +53,11 @@
 
     <main id="main">
       <section class="portada-tarta-oreo">
+        <picture class="filtro-oscuro">
+          <source media="(min-width: 900px)" srcset="/src/img/tarta-oreo-portada-pc.jpg?as=avif">
+          <source media="(min-width: 768px)" srcset="/src/img/tarta-oreo-portada-tablet.jpg?as=avif">
+          <img src="/src/img/tarta-oreo-portada-movil.jpg?as=avif" alt="Tarta de galleta oreo sin lactosa">
+        </picture>
         <div class="eslogan">
           <h1>Tarta de oreo sin lactosa</h1>
         </div>
@@ -105,7 +110,7 @@
             </div>
           </div>
 
-          <figure class="posicion-imagen">
+          <figure>
             <div class="foto-receta">
               <img
                 class="imagen-receta"

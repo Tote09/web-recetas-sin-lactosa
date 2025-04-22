@@ -53,6 +53,11 @@
 
     <main id="main">
       <section class="portada-muffins-chocolate">
+        <picture class="filtro-oscuro">
+          <source media="(min-width: 900px)" srcset="/src/img/muffins-portada-pc.jpg?as=avif">
+          <source media="(min-width: 768px)" srcset="/src/img/muffins-portada-tablet.jpg?as=avif">
+          <img src="/src/img/muffins-portada-movil.jpg?as=avif" alt="Muffin de chocolate con crema de cacao por enci,a u trozos de pistacho">
+        </picture>
         <div class="eslogan">
           <h1><span lang="en">Muffins</span> de chocolate sin lactosa</h1>
         </div>
@@ -98,7 +103,7 @@
             </div>
           </div>
 
-          <figure class="posicion-imagen">
+          <figure>
             <div class="foto-receta">
               <img
                 class="imagen-receta"
@@ -163,7 +168,7 @@
             alt="Muffins de chocolate con crema de cacao por encima sin lactosa"
             srcset="/src/img/muffins-400.jpg?as=avif 400w,
             /src/img/muffins-600.jpg?as=avif 600w,
-            /src/img/muffins-800.jpg?as=avif 800w
+            /src/img/muffins-800.jpg?as=avif 800w,
             /src/img/muffins-1000.jpg?as=avif 1000w
             "
             sizes="(min-width: 1260px) 360px, (min-width: 900px) calc(27.35vw + 21px), (min-width: 780px) calc(50vw - 30px), calc(100vw - 40px)"
