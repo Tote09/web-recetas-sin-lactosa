@@ -129,6 +129,7 @@ header a:hover {
 /*Fotografía*/
 img{
   width: 100%;
+  height: auto;
 }
 
 .portada {
@@ -637,7 +638,7 @@ button img {
     grid-template-columns: 1fr 1fr 1fr;
   }
 
-  /*PAGINA POST*/
+  /*PAGNA POST*/
 
   section .seccion-ingredientes {
     flex-direction: row;
