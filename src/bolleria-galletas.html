@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
+      rel="preload"
     >
     <link rel="icon" type="image/png" href="/src/img/logo-lactosa.png">
     <link rel="stylesheet" href="/src/css/estilos.css">
@@ -34,6 +34,7 @@
                 src="/src/img/logo-lactosa.png?as=webp"
                 alt="logotipo sin lactosa"
                 width="100"
+                height="100"
               >
             </a>
           </figure>
@@ -42,9 +43,9 @@
         <div>
           <nav aria-label="Menú principal">
             <ul>
-              <li><a href="./index.html">INICIO</a></li>
-              <li><a href="./categorias.html">CATEGORÍAS</a></li>
-              <li><a href="./enlaces.html">ENLACES</a></li>
+              <li class="menu_separacion"><a href="./index.html">INICIO</a></li>
+              <li class="menu_separacion"><a href="./categorias.html">CATEGORÍAS</a></li>
+              <li class="menu_separacion"><a href="./enlaces.html">ENLACES</a></li>
             </ul>
           </nav>
         </div>
@@ -54,9 +55,9 @@
     <main id="main">
       <section class="portada-bolleria-galletas">
         <picture class="filtro-oscuro">
-          <source media="(min-width: 900px)" srcset="/src/img/cookie-categoria-pc.jpg?as=avif">
-          <source media="(min-width: 768px)" srcset="/src/img/cookie-categoria-tablet.jpg?as=avif">
-          <img src="/src/img/cookie-categoria-movil.jpg?as=avif" alt="Cookies con pepitas de chocolate">
+          <source media="(min-width: 900px)" srcset="/src/img/cookie-categoria-pc.jpg?as=avif" width="2100" height="600">
+          <source media="(min-width: 768px)" srcset="/src/img/cookie-categoria-tablet.jpg?as=avif" width="800" height="600">
+          <img src="/src/img/cookie-categoria-movil.jpg?as=avif" width="560" height="600" alt="Cookies con pepitas de chocolate">
         </picture>
         <div class="eslogan">
           <h1>Bollería y galletas sin lactosa</h1>
@@ -83,6 +84,7 @@
                       class="imagen-receta"
                       src="/src/img/muffins.jpg"
                       width="400"
+                      height="267"
                       alt="Muffins de chocolate con crema de cacao por encima sin lactosa"
                       srcset="/src/img/muffins-400.jpg?as=avif 400w,
                       /src/img/muffins-600.jpg?as=avif 600w,
@@ -117,6 +119,7 @@
                       class="imagen-receta"
                       src="/src/img/cookies.jpg"
                       width="400"
+                      height="267"
                       alt="galletas con pepitas de chocolate"
                       srcset="/src/img/cookies-400.jpg?as=avif 400w,
                       /src/img/cookies-600.jpg?as=avif 600w,
@@ -149,6 +152,7 @@
               src="/src/img/logo-lactosa.png?as=webp"
               alt="logotipo Sin Lactosa"
               width="150"
+              height="150"
               loading="lazy"
             >
           </figure>
@@ -159,7 +163,7 @@
         <div class="columna-redes">
           <nav>
             <ul class="colocar-iconos-redes">
-              <li>
+              <li class="menu_separacion_icono">
                 <a class="icono-redes" href="#Instagram">
                   <img
                     src="/node_modules/@tabler/icons/categories/outline/Brand/brand-instagram.svg"
@@ -167,10 +171,12 @@
                     aria-label="Ir a Instagram"
                     title="Ir a Instagram"
                     loading="lazy"
+                    width="15"
+                    height="15"
                   >
                 </a>
               </li>
-              <li>
+              <li class="menu_separacion_icono_yt">
                 <a class="icono-redes" href="#Youtube">
                   <img
                     src="/node_modules/@tabler/icons/categories/outline/Brand/brand-youtube.svg"
@@ -178,6 +184,8 @@
                     aria-label="Ir a Youtube"
                     title="Ir a Youtube"
                     loading="lazy"
+                    width="20"
+                    height="15"
                   >
                 </a>
               </li>
@@ -186,11 +194,11 @@
           <nav>
             <div class="enlaces-footer">
               <ul>
-                <li><a href="#Privacidad">Política de privacidad</a></li>
+                <li class="menu_separacion"><a href="#Privacidad">Política de privacidad</a></li>
 
-                <li><a href="#Cookies">Política de cookies</a></li>
+                <li class="menu_separacion"><a href="#Cookies">Política de cookies</a></li>
 
-                <li><a href="#Aviso_legal">Aviso legal</a></li>
+                <li class="separacion"><a href="#Aviso_legal">Aviso legal</a></li>
               </ul>
             </div>
           </nav>
