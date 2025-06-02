@@ -37,6 +37,9 @@ ul {
   list-style: none;
 }
 
+a {
+  padding: 24px 0px 24px 0px;
+}
 /* FOOTER*/
 
 footer {
@@ -110,7 +113,17 @@ header a {
   color: rgb(0, 0, 0);
   font-weight: 700;
   padding-top: 5px;
+  
 }
+
+.menu_separacion{
+margin-bottom: 15px;
+}
+.menu_separacion_icono{
+margin-bottom: 15px;
+margin-right: 15px;
+}
+
 
 header a:hover {
   color: #004aad;
