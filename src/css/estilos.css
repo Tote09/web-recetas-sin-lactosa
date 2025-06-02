@@ -123,6 +123,7 @@ header a {
 
 .menu_separacion{
 margin-bottom: 15px;
+padding: 15px 0px 15px 0px;
 }
 
 .menu_separacion_icono{
@@ -137,7 +138,7 @@ padding-left: 15px;
 }
 
 .separacion{
-  padding: 15px;
+  padding: 15px 0px 15px 15px;;
   
 }
 header a:hover {
@@ -625,7 +626,7 @@ button img {
   }
 
   footer a[href="#Cookies"] {
-    padding: 0px 10px;
+    padding: 15px 15px;
     font-size: 0.8em;
   }
   footer a[href="#Aviso_legal"] {
@@ -634,19 +635,19 @@ button img {
   }
 
   footer a[href="#Privacidad"] {
-    padding: 0px 0px;
+    padding: 15px 15px;
     font-size: 0.8em;
   }
 
   footer a[href="#Cookies"]::after {
     content: "\007C";
-    padding-left: 10px;
+    padding-left: 35px;
     color: rgb(255, 255, 255);
   }
 
   footer a[href="#Privacidad"]::after {
     content: "\007C";
-    padding-left: 10px;
+    padding-left: 35px;
     color: rgb(255, 255, 255);
   }
 
