@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
+      rel="preload"
     >
     <link rel="icon" type="image/png" href="/src/img/logo-lactosa.png">
     <link rel="stylesheet" href="/src/css/estilos.css">
@@ -34,6 +34,7 @@
                 src="/src/img/logo-lactosa.png"
                 alt="logotipo sin lactosa"
                 width="100"
+                height="100"
               >
             </a>
           </figure>
@@ -42,9 +43,9 @@
         <div>
           <nav aria-label="Menú principal">
             <ul>
-              <li><a href="./index.html">INICIO</a></li>
-              <li><a href="./categorias.html">CATEGORÍAS</a></li>
-              <li><a href="./enlaces.html">ENLACES</a></li>
+              <li class="menu_separacion"><a href="./index.html">INICIO</a></li>
+              <li class="menu_separacion"><a href="./categorias.html">CATEGORÍAS</a></li>
+              <li class="menu_separacion"><a href="./enlaces.html">ENLACES</a></li>
             </ul>
           </nav>
         </div>
@@ -249,7 +250,7 @@
         <div class="columna-redes">
           <nav>
             <ul class="colocar-iconos-redes">
-              <li>
+              <li class="menu_separacion_icono">
                 <a class="icono-redes" href="#Instagram">
                   <img
                     src="/node_modules/@tabler/icons/categories/outline/Brand/brand-instagram.svg"
@@ -257,10 +258,12 @@
                     aria-label="Ir a Instagram"
                     title="Ir a Instagram"
                     loading="lazy"
+                    width="15"
+                    height="15"
                   >
                 </a>
               </li>
-              <li>
+              <li class="menu_separacion_icono_yt">
                 <a class="icono-redes" href="#Youtube">
                   <img
                     src="/node_modules/@tabler/icons/categories/outline/Brand/brand-youtube.svg"
@@ -268,6 +271,8 @@
                     aria-label="Ir a Youtube"
                     title="Ir a Youtube"
                     loading="lazy"
+                    width="15"
+                    height="15"
                   >
                 </a>
               </li>
@@ -276,11 +281,11 @@
           <nav>
             <div class="enlaces-footer">
               <ul>
-                <li><a href="#Privacidad">Política de privacidad</a></li>
+                <li class="menu_separacion"><a href="#Privacidad">Política de privacidad</a></li>
 
-                <li><a href="#Cookies">Política de cookies</a></li>
+                <li class="menu_separacion"><a href="#Cookies">Política de cookies</a></li>
 
-                <li><a href="#Aviso_legal">Aviso legal</a></li>
+                <li class="menu_separacion"><a href="#Aviso_legal">Aviso legal</a></li>
               </ul>
             </div>
           </nav>
