@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
+      rel="preload"
     >
     <link rel="icon" type="image/png" href="/src/img/logo-lactosa.png">
     <link rel="stylesheet" href="/src/css/estilos.css">
@@ -34,6 +34,7 @@
                 src="/src/img/logo-lactosa.png?as=webp"
                 alt="logotipo sin lactosa"
                 width="100"
+                height="100"
               >
             </a>
           </figure>
@@ -54,9 +55,9 @@
     <main id="main">
       <section class="portada-categoria">
         <picture class="filtro-oscuro">
-          <source media="(min-width: 900px)" srcset="/src/img/portada-categoria-pc.jpg?as=avif">
-          <source media="(min-width: 768px)" srcset="/src/img/portada-categoria-tablet.jpg?as=avif">
-          <img src="/src/img/portada-categoria-movil.jpg?as=avif" alt="Rellenando unas tartaletas de fresas con una manga pastelera con nata">
+          <source media="(min-width: 900px)" srcset="/src/img/portada-categoria-pc.jpg?as=avif" width="2100" height="600">
+          <source media="(min-width: 768px)" srcset="/src/img/portada-categoria-tablet.jpg?as=avif" width="800" height="600">
+          <img src="/src/img/portada-categoria-movil.jpg?as=avif" width="560" height="600" alt="Rellenando unas tartaletas de fresas con una manga pastelera con nata">
         </picture>
         <div class="eslogan">
           <h1>Deliciosos postres sin lactosa</h1>
@@ -83,6 +84,7 @@
                       class="imagen-receta"
                       src="/src/img/tartas-categoria.jpg"
                       width="400"
+                      height="267"
                       alt="Tarta de galleta oreo sin lactosa"
                       srcset="/src/img/tartas-categoria-400.jpg?as=avif 400w, 
                       /src/img/tartas-categoria-600.jpg?as=avif 600w, 
@@ -115,6 +117,7 @@
                       class="imagen-receta"
                       src="/src/img/brownie.jpg"
                       width="400"
+                      height="267"
                       alt="Brownie sin lactosa"
                       srcset="/src/img/brownie-400.jpg?as=avif 400w,
                       /src/img/brownie-600.jpg?as=avif 600w,
@@ -151,6 +154,7 @@
                       class="imagen-receta"
                       src="/src/img/cookie-categoria.jpg"
                       width="400"
+                      height="267"
                       alt="Cookies sin lactosa"
                       srcset="/src/img/cookie-categoria-400.jpg?as=avif 400w,
                       /src/img/cookie-categoria-600.jpg?as=avif 600w,
@@ -186,6 +190,7 @@
                       class="imagen-receta"
                       src="/src/img/ninos-categoria.jpg"
                       width="400"
+                      height="267"
                       alt="Cookies sin lactosa"
                       srcset="/src/img/ninos-categoria-400.jpg?as=avif 400w,
                       /src/img/ninos-categoria-600.jpg?as=avif 600w,
@@ -222,6 +227,7 @@
                       class="imagen-receta"
                       src="/src/img/helados-categoria.jpg"
                       width="400"
+                      height="267"
                       alt="Helados sin lactosa"
                       srcset="/src/img/helados-categoria-400.jpg?as=avif 400w,
                       /src/img/helados-categoria-600.jpg?as=avif 600w,
@@ -257,6 +263,7 @@
               src="/src/img/logo-lactosa.png?as=webp"
               alt="logotipo Sin Lactosa"
               width="150"
+              height="150"
               loading="lazy"
             >
           </figure>
@@ -275,6 +282,8 @@
                     aria-label="Ir a Instagram"
                     title="Ir a Instagram"
                     loading="lazy"
+                    width="20"
+                    height="20"
                   >
                 </a>
               </li>
@@ -286,6 +295,8 @@
                     aria-label="Ir a Youtube"
                     title="Ir a Youtube"
                     loading="lazy"
+                    width="20"
+                    height="20"
                   >
                 </a>
               </li>
