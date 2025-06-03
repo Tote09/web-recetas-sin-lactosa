@@ -187,20 +187,15 @@
         <div class="contenedor-post">
           <h2 class="h2-post">Ver vídeo receta</h2>
         </div>
-        <div class="video" aria-label="Video de la receta de flan sin lactosa">
-          <figure>
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/4KtRgkff08A?si=wolvxXRRmPPpwIAL&cc_load_policy=1"
-              title="Video receta de flan sin lactosa"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowfullscreen
-              loading="lazy"
-            >
-            </iframe>
-          </figure>
+        <div class="video-youtube" onclick="this.classList.add('active')">
+          <img src="https://img.youtube.com/vi/4KtRgkff08A/hqdefault.jpg" alt="Miniatura del video">
+          <div class="play-button"></div>
+          <iframe src="https://www.youtube.com/embed/4KtRgkff08A?autoplay=1&cc_load_policy=1" 
+          title="Video receta sin lactosa" 
+          allow="autoplay; encrypted-media" 
+          allowfullscreen 
+          loading="lazy">
+          </iframe>
         </div>
       </section>
       <div class="container_voto">
