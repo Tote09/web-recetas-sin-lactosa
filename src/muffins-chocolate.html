@@ -3,11 +3,11 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" href="https://fonts.googleapis.com">
+    <link rel="preload" href="https://fonts.gstatic.com" crossorigin>
     <link
       href="https://fonts.googleapis.com/css2?family=Alegreya+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap"
-      rel="stylesheet"
+      rel="preload"
     >
     <link rel="icon" type="image/png" href="/src/img/logo-lactosa.png">
     <link rel="stylesheet" href="/src/css/estilos.css">
@@ -34,6 +34,7 @@
                 src="/src/img/logo-lactosa.png?as=webp"
                 alt="logotipo sin lactosa"
                 width="100"
+                height="100"
               >
             </a>
           </figure>
@@ -42,9 +43,9 @@
         <div>
           <nav aria-label="Menú principal">
             <ul>
-              <li><a href="./index.html">INICIO</a></li>
-              <li><a href="./categorias.html">CATEGORÍAS</a></li>
-              <li><a href="./enlaces.html">ENLACES</a></li>
+              <li class="menu_separacion"><a href="./index.html">INICIO</a></li>
+              <li class="menu_separacion"><a href="./categorias.html">CATEGORÍAS</a></li>
+              <li class="menu_separacion"><a href="./enlaces.html">ENLACES</a></li>
             </ul>
           </nav>
         </div>
@@ -54,9 +55,9 @@
     <main id="main">
       <section class="portada-muffins-chocolate">
         <picture class="filtro-oscuro">
-          <source media="(min-width: 900px)" srcset="/src/img/muffins-portada-pc.jpg?as=avif">
-          <source media="(min-width: 768px)" srcset="/src/img/muffins-portada-tablet.jpg?as=avif">
-          <img src="/src/img/muffins-portada-movil.jpg?as=avif" alt="Muffin de chocolate con crema de cacao por enci,a u trozos de pistacho">
+          <source media="(min-width: 900px)" srcset="/src/img/muffins-portada-pc.jpg?as=avif" width="2100" height="600">
+          <source media="(min-width: 768px)" srcset="/src/img/muffins-portada-tablet.jpg?as=avif" width="800" height="600">
+          <img src="/src/img/muffins-portada-movil.jpg?as=avif" width="560" height="600" alt="Muffin de chocolate con crema de cacao por enci,a u trozos de pistacho">
         </picture>
         <div class="eslogan">
           <h1><span lang="en">Muffins</span> de chocolate sin lactosa</h1>
@@ -109,6 +110,7 @@
                 class="imagen-receta"
                 src="/src/img/ingredientes-muffin-chocolate.jpg"
                 width="400"
+                height="267"
                 alt="Ingredientes para muffins de chocolate sin lactosa"
                 srcset="/src/img/ingredientes-muffin-chocolate-400.jpg?as=avif 400w,
                 /src/img/ingredientes-muffin-chocolate-600.jpg?as=avif 600w,
@@ -165,6 +167,7 @@
             class="imagen-receta"
             src="/src/img/muffins.jpg"
             width="400"
+            height="267"
             alt="Muffins de chocolate con crema de cacao por encima sin lactosa"
             srcset="/src/img/muffins-400.jpg?as=avif 400w,
             /src/img/muffins-600.jpg?as=avif 600w,
@@ -181,21 +184,17 @@
         <div class="contenedor-post">
           <h2 class="h2-post">Ver vídeo receta</h2>
         </div>
-        <div class="video">
-          <figure>
-            <iframe
-              loading="lazy"
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/nVIKhqDvzhA?si=Jmk9a3pDZJfJu_dK&cc_load_policy=1"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            >
-            </iframe>
-          </figure>
+        <div class="video-youtube" onclick="this.classList.add('active')">
+    <img src="https://img.youtube.com/vi/nVIKhqDvzhA/hqdefault.jpg" alt="Miniatura del video receta sin lactosa">
+    <div class="play-button"></div>
+    <iframe 
+      loading="lazy"
+      src="https://www.youtube.com/embed/nVIKhqDvzhA?autoplay=1&cc_load_policy=1"
+      title="Video receta sin lactosa"
+      allow="autoplay; encrypted-media"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin">
+    </iframe>
   </div>
       </section>
       <div class="container_voto">
@@ -204,6 +203,8 @@
           <img
             src="/node_modules/@tabler/icons/categories/outline/Shapes/heart.svg"
             alt="Corazón"
+            width="15"
+            height="15"
           >
         </button>
       </div>
@@ -217,6 +218,7 @@
               src="/src/img/logo-lactosa.png?as=webp"
               alt="logotipo Sin Lactosab"
               width="150"
+              height="150"
               loading="lazy"
             >
           </figure>
@@ -227,7 +229,7 @@
         <div class="columna-redes">
           <nav>
             <ul class="colocar-iconos-redes">
-              <li>
+              <li class="menu_separacion_icono">
                 <a class="icono-redes" href="#Instagram">
                   <img
                     src="/node_modules/@tabler/icons/categories/outline/Brand/brand-instagram.svg"
@@ -235,9 +237,11 @@
                     aria-label="Ir a Instagram"
                     title="Ir a Instagram"
                     loading="lazy"
+                    width="15"
+                    height="15"
                   >
                 </a>
-              </li>
+              </li class="menu_separacion_icono_yt">
               <li>
                 <a class="icono-redes" href="#Youtube">
                   <img
@@ -246,6 +250,8 @@
                     aria-label="Ir a Youtube"
                     title="Ir a Youtube"
                     loading="lazy"
+                    width="20"
+                    height="15"
                   >
                 </a>
               </li>
@@ -254,11 +260,11 @@
           <nav>
             <div class="enlaces-footer">
               <ul>
-                <li><a href="#Privacidad">Política de privacidad</a></li>
+                <li class="menu_separacion"><a href="#Privacidad">Política de privacidad</a></li>
 
-                <li><a href="#Cookies">Política de cookies</a></li>
+                <li class="menu_separacion"><a href="#Cookies">Política de cookies</a></li>
 
-                <li><a href="#Aviso_legal">Aviso legal</a></li>
+                <li class="separacion"><a href="#Aviso_legal">Aviso legal</a></li>
               </ul>
             </div>
           </nav>
